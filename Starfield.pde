@@ -27,8 +27,8 @@ class OddParticle extends Particle {
   OddParticle() {
     myX = 300;
     myY = 230;
-    myAngle =  Math.random() * 3 * Math.PI;
-     mySpeed = Math.random() * 7;
+    myAngle =  Math.random() * 1 * Math.PI;
+     mySpeed = Math.random() * 13;
     myColor = color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
     super(); // call the parent constructor
   }
