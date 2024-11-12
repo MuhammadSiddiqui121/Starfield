@@ -56,7 +56,7 @@ void setup() {
   size(600, 600);
   for (int i = 0; i < bob.length; i++) {
     // Randomly assign some particles as OddParticles
-    if (Math.random() < 0.1) { // 10% chance to be an OddParticle
+    if (Math.random() < 0.7) { // 10% chance to be an OddParticle
       bob[i] = new OddParticle();
     } else {
       bob[i] = new Particle();
