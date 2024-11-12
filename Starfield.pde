@@ -25,10 +25,15 @@ class Particle {
 class OddParticle extends Particle {
 
   OddParticle() {
+    myX = 300;
+    myY = 230;
+    myAngle =  Math.random() * 3 * Math.PI;
+     mySpeed = Math.random() * 7;
+    myColor = color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
     super(); // call the parent constructor
   }
 
-  @Override
+
   void move() {
     super.move(); // inherit the basic movement behavior
 
@@ -41,7 +46,7 @@ class OddParticle extends Particle {
     }
   }
 
-  @Override
+  
   void show() {
     // Make the OddParticle appear larger and change color frequently
     myColor = color((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
