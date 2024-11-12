@@ -54,13 +54,11 @@ Particle[] bob = new Particle[1000];
 
 void setup() {
   size(600, 600);
-  for (int i = 0; i < bob.length; i++) {
-    // Randomly assign some particles as OddParticles
-    if (Math.random() < 0.7) { // 10% chance to be an OddParticle
-      bob[i] = new OddParticle();
-    } else {
-      bob[i] = new Particle();
+ for (int i = 0; i < 2 i++) {
+     bob[i] = new OddParticle();
     }
+for ( int i = 0; i < bob.length; i++){
+  bob[i] = new particle();
   }
 }
 
